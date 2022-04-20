@@ -1,0 +1,673 @@
+.nav-item .nav-2{
+
+    position: relative;
+}
+
+.nav-item .nav-2::before
+{
+content: "";
+position: absolute;
+top: 100%;
+left: 10%;
+width: 60%;
+height: 2px;
+background: white;
+
+}
+
+
+.nav-1
+{
+    position: relative;
+    
+}
+.nav-1::before {
+    content: "";
+position: absolute;
+top: 100%;
+left: 10%;
+
+width: 0;
+height: 2px;
+background-color: white;
+
+transition: all .5s;
+}
+.nav-item a.active .nav-1::before 
+{
+    width: 60% !important;
+}
+
+.nav-item:hover .nav-1::before 
+{
+ width: 60% ;
+}
+.navbar-nav li:hover>ul.dropdown-menu{
+    display: block;
+}
+.dropdown-submenu{
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu{
+    top: 0%;
+    margin-top: -5px;
+    right: 100%;
+}
+.dropdown-menu>li>a:hover::after
+{
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+.dropdown-menu li a{
+    transition: all .5s;
+}
+.dropdown-menu li:hover a
+{
+    color: blue !important;
+}
+
+
+@media screen and (max-width:991px) {
+    .nav-link::before
+    {
+        background: none;
+    }
+   
+    .nav-item .nav-2::before
+    {
+        background: none;
+    }
+}
+header
+{
+width: 100%;
+height: 100vh;
+    background: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.header
+{
+    background:rgba(12, 12, 12, 0.7);
+    
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+
+.header h2::after{
+    content: "  |";
+    color: white;
+    animation-name: morgan;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes morgan
+{
+    2%{content:"de |"}
+    4%{content: "dev |"; }
+    6%{content: "deve |"; }
+    8%{content: "devel |";}
+    10%{content: "develo |";}
+    12%{content: "develop |";}
+    14%{content: "develope |";}
+    16%{content: "developer |";}
+    18%{content:"develope |";}
+    20%{content: "develop |";}
+    22%{content: "develo |";}
+    24%{content: "devel |";}
+    26%{content: "deve |";}
+    28%{content: "dev |";}
+    30%{content: "de |";}
+    31%{content:"des |"}
+    32%{content: "desi |"; }
+    33%{content: "desig |"; }
+    34%{content: "designe |";}
+    36%{content: "designer|";}
+    38%{content: "designe |";}
+    39%{content: "desig |"; }
+    40%{content: "desi |"; }
+    42%{content:"des |"}
+    44%{content:"de |"}
+    48%{content:"d |"}
+    49%{content:"|"}
+    50%{content:"f|"}
+    52%{content:"fr|"}
+    54%{content:"fre|"}
+    56%{content:"free|"}
+    58%{content:"freel|"}
+    60%{content:"freela|"}
+    61%{content:"freelan|"}
+    62%{content:"freelanc|"}
+    63%{content:"freelance|"}
+    64%{content:"freelancer|"}
+    65%{content:"freelance|"}
+    66%{content:"freelanc|"}
+    68%{content:"freelan|"}
+    69%{content:"freela|"}
+    70%{content:"freel|"}
+    71%{content:"free|"}
+    72%{content:"fre|"}
+    74%{content:"fr|"}
+    75%{content:"f|"}
+    76%{content:"p|"}
+    78%{content:"ph|"}
+    79%{content:"pho|"}
+    80%{content:"phot|"}
+    81%{content:"photo|"}
+    82%{content:"photog|"}
+    83%{content:"photogr|"}
+    84%{content:"photogra|"}
+    85%{content:"photograp|"}
+    86%{content:"photograph|"}
+    87%{content:"photographe|"}
+    88%{content:"photographer|"}
+    89%{content:"photographe|"}
+    90%{content:"photograph|"}
+    91%{content:"photograp|"}
+    92%{content:"photogra|"}
+    93%{content:"photogr|"}
+    94%{content:"photog|"}
+    95%{content:"photo|"}
+    96%{content:"phot|"}
+    97%{content:"pho|"}
+    98%{content:"ph|"}
+    99%{content:"p|"}
+    100%{content:"d|"}
+
+
+
+
+
+}
+.about-back
+{
+    background: #f5f5f5;
+}
+
+.type h2
+{
+    position: relative;
+}
+.type h2::after{
+content: "";
+width: 90px;
+height: 3px;
+background: blue;
+position: absolute;
+top: 102%;
+left: 0%;
+
+}
+
+.servise
+{
+    background: #f5f5f5;
+    overflow: hidden;
+    text-align: center;
+}
+.servise .p-after
+{
+    position: relative;
+}
+
+.servise .p-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 50px;
+    transform: translateX(50%);
+    height: 5px;
+    background: blue;
+
+}
+.serv{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 10px #0078ff;
+    transition: all .5s;
+    
+}
+.serv:hover
+{
+    background:#0078ff ;
+    color: white;
+   border: none;
+   border: solid 10px #afccec;
+}
+.se-1
+{
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+}
+.se-2
+{
+    padding: 10px;
+}
+.serv-back
+{
+    background-image: url(../img/post-3.jpg);
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-attachment: fixed;
+}
+.serv-back1{
+    width: 100%;
+    position: absolute;
+top: 0%;
+left: 0%;
+bottom: 0%;
+
+background:rgba(85, 130, 252, 0.5);
+
+}
+.serv1-back1{
+    width: 70px;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 8px hsl(213, 51%, 82%);
+    
+}
+.PORTFOLIO
+{
+    background: #f5f5f5;
+    overflow: hidden;
+    text-align: center;
+}
+.PORTFOLIO .p-after
+{
+    position: relative;
+}
+
+.PORTFOLIO .p-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 50px;
+    transform: translateX(50%);
+    height: 5px;
+    background: blue;
+
+}
+.img-type
+{
+    border: solid 3px #0d6efd ;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+.se-scale img{
+    transition: all 1s;
+   
+
+}
+.se-scale:hover img
+{
+transform: scale(1.3);
+}
+.serv1-back
+{
+    background-image: url(../img/overlay-bg.jpg);
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-attachment: fixed;
+}
+.serv1-back img
+{
+    border-radius: 50%;
+}
+.carousel-indicators
+{
+ transform: translateY(110%);
+}
+.carousel-indicators button
+{
+    width: 15px !important;
+    height: 15px !important;
+    border: solid 1px white;
+    border-radius: 50%;
+
+}
+
+/*
+.bnb1
+{
+    width: 80%;
+    
+    overflow: hidden;
+  
+}
+@media screen and (max-width:575px) {
+    .bnb1{
+        position: relative;
+    }
+   
+   
+   
+    .bns
+{
+    position: absolute;
+   top: 0%;
+   right:-250%;
+   animation-name: icon2;
+   animation-duration: 5s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+  
+ 
+}
+@keyframes icon2{
+    0% {right: -500%;}
+    20%{right: -500%;}
+    40%{right: -500%;}
+    50% {right: 0%;}
+    55% {right: 0%;}
+    100% {right: 100%;}
+    
+    }
+    .bnb
+{
+
+position: relative;
+top: 0%;
+right: 0%;
+animation-name: icon1;
+animation-duration: 5s;
+
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes icon1{
+0% {right: 0%;}
+20%{right: 0%;}
+50%{right:100%}
+55%{right:100%}
+100% {right: 100%;}
+
+}
+
+    
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    .bnb1{
+        position: relative;
+    }
+   
+   
+   
+    .bns
+{
+    position: absolute;
+   top: 0%;
+   right:-250%;
+   animation-name: icon2;
+   animation-duration: 5s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+  
+ 
+}
+@keyframes icon2{
+    0% {right: -400%;}
+    20%{right: -400%;}
+    40%{right: -400%;}
+    50% {right: 0%;}
+    55% {right: 0%;}
+    100% {right: 100%;}
+    
+    }
+    .bnb
+{
+
+position: relative;
+top: 0%;
+right: 0%;
+animation-name: icon1;
+animation-duration: 5s;
+
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes icon1{
+0% {right: 0%;}
+20%{right: 0%;}
+50%{right:100%}
+55%{right:100%}
+100% {right: 100%;}
+
+}
+
+    
+}
+@media screen and (min-width:769px) and (max-width:999px) {
+    .bnb1{
+        position: relative;
+    }
+   
+   
+   
+    .bns
+{
+    position: absolute;
+   top: 0%;
+   right:-250%;
+   animation-name: icon2;
+   animation-duration: 5s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+  
+ 
+}
+@keyframes icon2{
+    0% {right: -300%;}
+    20%{right: -300%;}
+  
+    50% {right: 0%;}
+    55% {right: 0%;}
+    100% {right: 100%;}
+    
+    }
+    .bnb
+{
+
+position: relative;
+top: 0%;
+right: 0%;
+animation-name: icon1;
+animation-duration: 5s;
+
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+@keyframes icon1{
+0% {right: 0%;}
+20%{right: 0%;}
+50%{right:100%}
+55%{right:100%}
+100% {right: 100%;}
+
+}
+
+    
+}
+
+    @media screen and (min-width:1000px) {
+        .bnb1{
+            position: relative;
+        }
+       
+        .bns
+    {
+        position: absolute;
+       top: 0%;
+       right:-90%;
+       animation-name: icon2;
+       animation-duration: 5s;
+       animation-timing-function: ease-in;
+       animation-iteration-count: infinite;
+      
+     
+    }
+    @keyframes icon2{
+        0% {right: -150%;}
+        20%{right: -150%;}
+        50% {right: 0%;}
+        55% {right: 0%;}
+        100% {right: 100%;}
+        
+        }
+        .bnb
+{
+    
+    position: relative;
+    top: 0%;
+    right: 0%;
+    animation-name: icon1;
+    animation-duration: 5s;
+  
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes icon1{
+    0% {right: 0%;}
+    20%{right: 0%;}
+   50%{right:100%}
+   55%{right:100%}
+    100% {right: 100%;}
+    
+    }
+
+        
+    }
+    */
+    .blog
+    {
+        background: #f5f5f5;
+        overflow: hidden;
+        text-align: center;
+    }
+    .blog .p-after
+    {
+        position: relative;
+    }
+    
+    .blog .p-after::after
+    {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        width: 50px;
+        transform: translateX(50%);
+        height: 5px;
+        background: blue;
+    
+    }
+    .card-group
+    {
+        box-sizing: border-box !important;
+    }
+    .card-1
+    {
+        padding: 15px;
+    }
+    .card-1 h5
+    {
+        transition: all .5s;
+    }
+    .card-1 h5:hover  
+    {
+        color: #0078ff;
+    }
+    .card-footer h6{
+        transition: all .5s;
+    }
+    .card-footer a:hover h6
+    {
+      color: #0078ff;
+    }
+    .form-back
+{
+    background-image: url(../img/overlay-bg.jpg);
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+.form-back1{
+    width: 100%;
+    position: absolute;
+top: 0%;
+left: 0%;
+bottom: 0%;
+
+background:rgba(85, 130, 252, 0.5);
+
+}
+.form h2{
+    position: relative;
+}
+.form h2::after
+{
+    content: "";
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left:0% ;
+    background: #0078ff;
+}
+
+.for{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    border-radius: 50%;
+    border: solid 5px #0078ff;
+    transition: all .5s;
+    
+}
+.for a
+{
+    color: black;
+}
+.for:hover
+{
+    background:#0078ff ;
+   
+   
+   border: solid 10px #afccec;
+}
+.for:hover  i
+{
+    color: white;
+}
+footer{
+    background:rgb(26, 85, 248);
+    color: white;
+}
